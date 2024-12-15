@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_QWERTY] = LAYOUT_planck_grid(
-    XXXXXXX, XXXXXXX, KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    XXXXXXX, XXXXXXX,
+    XXXXXXX, XXXXXXX, KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_BSPC, XXXXXXX,
     KC_Q,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_P,
     XXXXXXX, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT ,
     XXXXXXX, KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  OS_RSFT, OS_RALT, KC_RGUI, KC_LALT, KC_RCTL, RAISE
@@ -160,7 +160,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* combos */
 const uint16_t PROGMEM combo_df[] = {KC_D, KC_F, COMBO_END};
-const uint16_t PROGMEM combo_jk[] = {KC_K, KC_J, COMBO_END};
 const uint16_t PROGMEM combo_we[] = {KC_W, KC_E, COMBO_END};
 const uint16_t PROGMEM combo_io[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM combo_ef[] = {KC_E, KC_F, COMBO_END};
@@ -171,7 +170,6 @@ const uint16_t PROGMEM combo_kl[] = {KC_K, KC_L, COMBO_END};
 const uint16_t PROGMEM combo_sd[] = {KC_S, KC_D, COMBO_END};
 combo_t key_combos[] = {
     COMBO(combo_df, KC_TAB),
-    COMBO(combo_jk, KC_BSPC),
     COMBO(combo_we, KC_LCTL),
     COMBO(combo_io, KC_RCTL),
     COMBO(combo_ef, KC_LGUI),
